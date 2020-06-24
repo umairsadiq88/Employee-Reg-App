@@ -1,16 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Employee Registration App</title>
-</head>
-<body>
-    
+  </head>
+  <body>
+    <div>
+      <div>
+        <h1>Employee Registration Form</h1>
+      </div>
 
-<h1>User Registration Form</h1>
-<p> Make an App for Company Employee Registration with personal information & further company's related details </p>
-</body>
-<script src="App.js"></script>
+      <div>
+        <form>
+          <table>
+            <tr>
+              <td>EMPLOYEE ID</td>
+              <td><input type="random" value="01" /></td>
+            </tr>
+            <tr>
+              <td>FIRST NAME</td>
+              <td>
+                <input type="text" name="First_Name" maxlength="30" /> (max 30
+                characters a-z and A-Z)
+              </td>
+            </tr>
+
+            <tr>
+              <td>LAST NAME</td>
+              <td>
+                <input type="text" name="Last_Name" maxlength="30" />(max 30
+                characters a-z and A-Z)
+              </td>
+            </tr>
+            <tr>
+              <td>RECENT PICTURE</td>
+              <td>
+                <label for="img"></label>
+                <input type="file" id="img" name="img" accept="image/*" />
+                (Passport size picture required)
+              </td>
+            </tr>
+            <tr>
+              <td>C.N.I.C. NO.</td>
+              <td>
+                <input type="number" name="CNIC No" maxlength="13" />
+              </td>
+            </tr>
+
+            <tr>
+              <td>Insert CNIC Copy</td>
+              <td>
+                <input
+                  type="file"
+                  id="CNIC img"
+                  name="CNIC img"
+                  accept="image/*"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>PASSPORT (if any)</td>
+              <td>
+                <input type="text" name="Passport" maxlength="13" />
+              </td>
+            </tr>
+
+            <tr>
+              <td>DATE OF BIRTH</td>
+              <td><input type="date" id="myDate" /></td>
+            </tr>
+
+            <tr>
+              <td>PERSONAL EMAIL</td>
+              <td><input type="email" name="Email" maxlength="100" /></td>
+            </tr>
+
+            <tr>
+              <td>OFFICIAL EMAIL</td>
+              <td>
+                <input type="email" name="OFFICIAL Email" maxlength="100" />
+              </td>
+            </tr>
+
+            <tr>
+              <td>CELL NUMBER</td>
+              <td>
+                <input type="tel" name="CELL No" maxlength="10" /> (10 digit
+                number)
+              </td>
+            </tr>
+
+            <tr>
+              <td>EMERGENCY NUMBER</td>
+              <td>
+                <input type="tel" name="EMERGENCY No" maxlength="10" /> (10
+                digit number)
+              </td>
+            </tr>
+
+            <tr>
+              <td>GENDER</td>
+              <td>
+                Male
+                <input
+                  type="radio"
+                  name="Gender"
+                  value="Male"
+                  checked="checked"
+                />
+                Female
+                <input type="radio" name="Gender" value="Female" />
+              </td>
+            </tr>
+
+            <tr>
+              <td>ADDRESS</td>
+              <td><textarea name="Address" rows="4" cols="30"></textarea></td>
+            </tr>
+
+            <tr>
+              <td>CITY</td>
+              <td>
+                <input type="text" name="City" maxlength="30" />
+                (max 30 characters a-z and A-Z)
+              </td>
+            </tr>
+
+            <tr>
+              <td>PIN CODE</td>
+              <td>
+                <input type="text" name="Pin_Code" maxlength="6" />
+                (6 digit number)
+              </td>
+            </tr>
+
+            <tr>
+              <td>PROVINCE</td>
+              <td>
+                <input type="text" name="Province" readonly="readonly" /> (max
+                30 characters a-z and A-Z)
+              </td>
+            </tr>
+
+            <tr>
+              <td>CURRENT QUALIFICATION</td>
+              <td>
+                <input
+                  type="text"
+                  name="CURRENT QUALIFICATION"
+                  maxlength="15"
+                />
+              </td>
+            </tr>
+
+            <tr>
+              <td>BLOOD GROUP</td>
+              <td>
+                <input type="text" name="Blood Group" /> (max 30 characters a-z
+                and A-Z)
+              </td>
+            </tr>
+
+            <tr>
+              <td>DATE OF JOINING</td>
+              <td>
+                <input type="date" name="DATE OF JOINING" />
+              </td>
+            </tr>
+            <tr>
+              <td>Department</td>
+              <td>
+                <input type="text" name="Department" />
+              </td>
+            </tr>
+            <tr>
+              <td>Designation</td>
+              <td>
+                <input type="text" name="Designation" />
+              </td>
+            </tr>
+            <tr>
+              <td>Name of Supervisor/Incharge/Manager</td>
+              <td>
+                <input type="text" name="Name of Supervisor" />
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <button>Submit</button>
+                <button>Reset</button>
+              </td>
+            </tr>
+          </table>
+        </form>
+      </div>
+    </div>
+  </body>
+  <script src="App.js"></script>
 </html>
